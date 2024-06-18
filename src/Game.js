@@ -1,7 +1,7 @@
+import { EventEmitter } from 'events';
 import Phaser from 'phaser';
 import IntroScene from './scenes/IntroScene';
 import MainScene from './scenes/MainScene';
-import { EventEmitter } from 'events';
 
 export const gameEvents = new EventEmitter();
 

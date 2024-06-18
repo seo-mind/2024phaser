@@ -15,19 +15,26 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-import game, { gameEvents } from '../Game.js';
+import { ref, onMounted , onBeforeUnmount } from 'vue';
+import game, { gameEvents } from '@/Game.js';
+import { storeToRefs } from 'pinia'
+import { useGameStore } from '@/stores/GameStore'
 
 const gameContainer = ref(null);
 const showWordLayer = ref(false);
-let words = ref(null); // 선택할 단어들
+const gameStore = useGameStore();
+//let words = ref(null); // 선택할 단어들
+const { words } = storeToRefs(gameStore)
+console.log(words)
 
 let randomKeys =[];
 let randomKey = 0;
 const list_count = 4;
 
-onMounted(() => {
-  words = [{"eng":"apple", "kor":"사과"}, {"eng":"door", "kor":"문"}, {"eng":"egg","kor":"계란"}, {"eng":"frog","kor":"개구리"}, {"eng":"one","kor":"1"}]
+onMounted(async () => {
+  // await useGameStore.getWords();
+  await gameStore.getWordsList();
+
   
   // 게임을 특정 DOM 요소에 붙입니다
   game.parent = gameContainer.value;
@@ -37,10 +44,17 @@ onMounted(() => {
   });
 });
 
+onBeforeUnmount(() => {
+  gameStore.$reset()
+})
+
 function showWord(){
   randomKeys = getRandomElements(words, list_count)
   randomKey = Math.floor(Math.random() * ( list_count ));
   showWordLayer.value = true; 
+  // Layer 가 true 이면 뒤에 배경 가리기
+
+
 } 
 function selectWord(word) {
   
@@ -79,8 +93,8 @@ function getRandomElements(arr, count) {
 
 .word-layer {
   position: absolute;
-  top: 400;
-  left: 300;
+  top: 200px;
+  left: 300px;
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.8);
