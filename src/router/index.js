@@ -18,6 +18,12 @@ const routes = [
     component: () => import('@/views/game/GameView.vue'),
     beforeEnter: routeGuardForLogging
   },
+  {
+    path: '/rank1',
+    name: 'rank1',
+    component: () => import('@/views/game/RankView.vue'),
+    beforeEnter: routeGuardForLogging
+  }
 ]
 
 const router = createRouter({

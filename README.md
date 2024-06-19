@@ -7,7 +7,7 @@ npm i
 npm install events
 
 # step 3
-npm run dev
+npm run dev -- --host
 
 # step 4
 json-server --watch ./fake-server/db.json --port 3001

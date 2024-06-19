@@ -20,15 +20,17 @@ class MainScene extends Phaser.Scene {
     this.elapsedTime = 0;
     this.BULLET_SPEED = 200;
 
-    this.player = this.physics.add.sprite(100, 100, 'player');
+    this.player = this.physics.add.sprite(200, 200, 'player');
     this.player.setScale(0.1);
     this.player.setCollideWorldBounds(true);
 
     // 총알 그룹 설정
     this.bullets = this.physics.add.group({
       defaultKey: 'bullet',
-      maxSize: 10
+      maxSize: 50
     });
+
+
 
     // 총알 주기적으로 생성
     // this.time.addEvent({
@@ -86,6 +88,8 @@ class MainScene extends Phaser.Scene {
   onEvent(){
     this.fireBullet();
     this.updateTime();
+    this.fireBullet2();
+    this.fireBullet3();
   }
 
   updateTime() {
@@ -103,36 +107,105 @@ class MainScene extends Phaser.Scene {
     }, this);
   }
 
+  // fireBullet() {
+  //   const bullet = this.bullets.get();
+
+  //   if (bullet) {
+  //     // 총알이 생성될 위치를 무작위로 선택
+  //     const positions = [
+  //       { x: Phaser.Math.Between(0, 1200), y: 0 }, // 상단에서 생성
+  //       { x: Phaser.Math.Between(0, 1200), y: 800 }, // 하단에서 생성
+  //       { x: 0, y: Phaser.Math.Between(0, 800) }, // 왼쪽에서 생성
+  //       { x: 1200, y: Phaser.Math.Between(0, 800) } // 오른쪽에서 생성
+  //     ];
+  //     const spawnPosition = Phaser.Utils.Array.GetRandom(positions);
+
+  //     bullet.enableBody(true, spawnPosition.x, spawnPosition.y, true, true);
+
+  //     // 플레이어의 위치를 계산하여 bullet을 그 방향으로 발사
+  //     const direction = new Phaser.Math.Vector2(this.player.x - bullet.x, this.player.y - bullet.y);
+  //     direction.normalize();
+  //     bullet.setVelocity(direction.x * this.BULLET_SPEED, direction.y * this.BULLET_SPEED);
+  //   }
+  // }
+
   fireBullet() {
     const bullet = this.bullets.get();
 
     if (bullet) {
-      // 총알이 생성될 위치를 무작위로 선택
-      const positions = [
-        { x: Phaser.Math.Between(0, 800), y: 0 }, // 상단에서 생성
-        { x: Phaser.Math.Between(0, 800), y: 600 }, // 하단에서 생성
-        { x: 0, y: Phaser.Math.Between(0, 600) }, // 왼쪽에서 생성
-        { x: 800, y: Phaser.Math.Between(0, 600) } // 오른쪽에서 생성
-      ];
-      const spawnPosition = Phaser.Utils.Array.GetRandom(positions);
+        // 총알이 생성될 위치를 무작위로 선택
+        const positions = [
+            { x: Phaser.Math.Between(0, 1200), y: 0 }, // 상단에서 생성
+            { x: Phaser.Math.Between(0, 1200), y: 800 }, // 하단에서 생성
+            { x: 0, y: Phaser.Math.Between(0, 800) }, // 왼쪽에서 생성
+            { x: 1200, y: Phaser.Math.Between(0, 800) }, // 오른쪽에서 생성
+            { x: 0, y: 0 }, // 왼쪽 상단에서 생성
+            { x: 1200, y: 0 }, // 오른쪽 상단에서 생성
+            { x: 0, y: 800 }, // 왼쪽 하단에서 생성
+            { x: 1200, y: 800 } // 오른쪽 하단에서 생성
+        ];
+        const spawnPosition = Phaser.Utils.Array.GetRandom(positions);
 
-      bullet.enableBody(true, spawnPosition.x, spawnPosition.y, true, true);
+        bullet.enableBody(true, spawnPosition.x, spawnPosition.y, true, true);
 
-      // 플레이어의 위치를 계산하여 bullet을 그 방향으로 발사
-      const direction = new Phaser.Math.Vector2(this.player.x - bullet.x, this.player.y - bullet.y);
-      direction.normalize();
-      bullet.setVelocity(direction.x * this.BULLET_SPEED, direction.y * this.BULLET_SPEED);
+        // 플레이어의 위치를 계산하여 bullet을 그 방향으로 발사
+        const direction = new Phaser.Math.Vector2(this.player.x - bullet.x, this.player.y - bullet.y);
+        direction.normalize();
+        bullet.setVelocity(direction.x * this.BULLET_SPEED, direction.y * this.BULLET_SPEED);
     }
   }
+  fireBullet2() {
+    const bullet = this.bullets.get();
+
+    if (bullet) {
+        // 총알이 생성될 위치를 무작위로 선택
+        const positions = [
+            { x: Phaser.Math.Between(0, 1200), y: 0 }, // 상단에서 생성
+        ];
+        const spawnPosition = Phaser.Utils.Array.GetRandom(positions);
+
+        bullet.enableBody(true, spawnPosition.x, spawnPosition.y, true, true);
+
+        // 플레이어의 위치를 계산하여 bullet을 그 방향으로 발사
+        //const direction = new Phaser.Math.Vector2(this.player.x - bullet.x, this.player.y - bullet.y);
+        //const direction = new Phaser.Math.Vector2(this.player.x - bullet.x, this.player.y - bullet.y);
+        //direction.normalize();
+        bullet.setVelocity(0, 200);
+    }
+  }
+
+  fireBullet3() {
+    const bullet = this.bullets.get();
+
+    if (bullet) {
+        // 총알이 생성될 위치를 무작위로 선택
+        const positions = [
+            { x: Phaser.Math.Between(0, 800), y: 0, velocity: { x: 0, y: this.BULLET_SPEED } }, // 상단에서 하단으로
+            { x: Phaser.Math.Between(0, 800), y: 600, velocity: { x: 0, y: -this.BULLET_SPEED } }, // 하단에서 상단으로
+            { x: 0, y: Phaser.Math.Between(0, 600), velocity: { x: this.BULLET_SPEED, y: 0 } }, // 왼쪽에서 오른쪽으로
+            { x: 800, y: Phaser.Math.Between(0, 600), velocity: { x: -this.BULLET_SPEED, y: 0 } } // 오른쪽에서 왼쪽으로
+        ];
+        const spawnPosition = Phaser.Utils.Array.GetRandom(positions);
+
+        bullet.enableBody(true, spawnPosition.x, spawnPosition.y, true, true);
+
+        // 고정된 속도로 총알 발사
+        bullet.setVelocity(spawnPosition.velocity.x, spawnPosition.velocity.y);
+    }
+}
+
+  
+
   handleOverlap(player, bullet) {
     bullet.destroy(); // 총알 제거
     this.scenePause();
-    gameEvents.emit('player-hit'); // Vue.js 이벤트 발생
+    gameEvents.emit('player-hit', this.elapsedTime); // Vue.js 이벤트 발생
     
   }
 
   
   handleDataReceived(data) {
+    
     // Vue.js에서 받은 데이터를 Phaser에서 처리하는 로직
     this.sceneResume();
     //this.add.text(200, 200, `Received: ${data}`, { fontSize: '24px', fill: '#FF5733' }).setOrigin(0.5);
