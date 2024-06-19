@@ -2,10 +2,10 @@ import { instance } from '@/common/AxiosConfig'
 import { defineStore } from 'pinia'
 import { computed, ref } from 'vue'
 
-export const useGameStore = defineStore('gameStore', () => {
+export const useGameStore = defineStore('useGameStore', () => {
   const game = ref({
     data: {},
-    dataList: {},
+    dataList: [],
     result: {
       status: '',
       message: ''
@@ -15,6 +15,11 @@ export const useGameStore = defineStore('gameStore', () => {
   const gameData = computed(() => {
     return game.value.data
   })
+
+  const gameDataList = computed(() => {
+    return game.value.dataList
+  })
+
 
   const getWordsList = async () => {
     const response = await instance.get('/words')
@@ -33,6 +38,7 @@ export const useGameStore = defineStore('gameStore', () => {
   return {
     game,
     gameData,
+    gameDataList,
     getWordsList,
   }
 })

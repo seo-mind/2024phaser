@@ -1,9 +1,109 @@
 {
-  "words" : [
+  "words" :[
+    {
+      "eng": "act",
+      "kor": "행동하다,행동,행위",
+      "id": "bf32"
+    },
+    {
+      "eng": "always",
+      "kor": "항상",
+      "id": "c861"
+    },
     {
       "eng": "apple",
       "kor": "사과",
       "id": "427a"
+    },
+    {
+      "eng": "around",
+      "kor": "주위에",
+      "id": "b123"
+    },
+    {
+      "eng": "because",
+      "kor": "왜냐하면",
+      "id": "2687"
+    },
+    {
+      "eng": "before",
+      "kor": "이전에",
+      "id": "3986"
+    },
+    {
+      "eng": "better",
+      "kor": "더 나은",
+      "id": "334f"
+    },
+    {
+      "eng": "between",
+      "kor": "사이에",
+      "id": "c621"
+    },
+    {
+      "eng": "black",
+      "kor": "검은",
+      "id": "4494"
+    },
+    {
+      "eng": "blue",
+      "kor": "파란",
+      "id": "9868"
+    },
+    {
+      "eng": "brown",
+      "kor": "갈색",
+      "id": "ce1e"
+    },
+    {
+      "eng": "carry",
+      "kor": "나르다",
+      "id": "135e"
+    },
+    {
+      "eng": "cat",
+      "kor": "고양이",
+      "id": "b3c4"
+    },
+    {
+      "eng": "change",
+      "kor": "바꾸다",
+      "id": "3da1"
+    },
+    {
+      "eng": "clean",
+      "kor": "깨끗한",
+      "id": "c5d6"
+    },
+    {
+      "eng": "close",
+      "kor": "가까운",
+      "id": "b1a9"
+    },
+    {
+      "eng": "come",
+      "kor": "오다",
+      "id": "6dc7"
+    },
+    {
+      "eng": "cut",
+      "kor": "자르다",
+      "id": "bc5a"
+    },
+    {
+      "eng": "different",
+      "kor": "다른",
+      "id": "f775"
+    },
+    {
+      "eng": "do",
+      "kor": "하다",
+      "id": "41ef"
+    },
+    {
+      "eng": "dog",
+      "kor": "개",
+      "id": "b3c4"
     },
     {
       "eng": "door",
@@ -11,9 +111,64 @@
       "id": "9280"
     },
     {
+      "eng": "draw",
+      "kor": "그리다",
+      "id": "289c"
+    },
+    {
+      "eng": "drink",
+      "kor": "마시다",
+      "id": "33a8"
+    },
+    {
+      "eng": "drive",
+      "kor": "운전하다",
+      "id": "cfd0"
+    },
+    {
+      "eng": "eat",
+      "kor": "먹다",
+      "id": "b3c4"
+    },
+    {
       "eng": "egg",
       "kor": "계란",
       "id": "4e4d"
+    },
+    {
+      "eng": "fall",
+      "kor": "떨어지다",
+      "id": "ce15"
+    },
+    {
+      "eng": "far",
+      "kor": "멀리",
+      "id": "8fde"
+    },
+    {
+      "eng": "fast",
+      "kor": "빠른",
+      "id": "1bb6"
+    },
+    {
+      "eng": "fat",
+      "kor": "뚱뚱한",
+      "id": "b3c4"
+    },
+    {
+      "eng": "find",
+      "kor": "찾다",
+      "id": "29db"
+    },
+    {
+      "eng": "fly",
+      "kor": "날다",
+      "id": "eeec"
+    },
+    {
+      "eng": "forget",
+      "kor": "잊다",
+      "id": "0fd5"
     },
     {
       "eng": "frog",
@@ -21,9 +176,539 @@
       "id": "9385"
     },
     {
+      "eng": "get",
+      "kor": "얻다",
+      "id": "b3c4"
+    },
+    {
+      "eng": "get",
+      "kor": "얻다",
+      "id": "0cf8"
+    },
+    {
+      "eng": "give",
+      "kor": "주다",
+      "id": "34fd"
+    },
+    {
+      "eng": "go",
+      "kor": "가다",
+      "id": "5f57"
+    },
+    {
+      "eng": "good",
+      "kor": "좋은",
+      "id": "3982"
+    },
+    {
+      "eng": "green",
+      "kor": "녹색",
+      "id": "c9cb"
+    },
+    {
+      "eng": "grow",
+      "kor": "성장하다",
+      "id": "0c15"
+    },
+    {
+      "eng": "hand",
+      "kor": "손",
+      "id": "d4a3"
+    },
+    {
+      "eng": "happy",
+      "kor": "행복한",
+      "id": "4f76"
+    },
+    {
+      "eng": "hard",
+      "kor": "어려운",
+      "id": "860f"
+    },
+    {
+      "eng": "hat",
+      "kor": "모자",
+      "id": "b3c4"
+    },
+    {
+      "eng": "have",
+      "kor": "가지다",
+      "id": "87b5"
+    },
+    {
+      "eng": "hear",
+      "kor": "듣다",
+      "id": "88c0"
+    },
+    {
+      "eng": "help",
+      "kor": "도와주다",
+      "id": "540b"
+    },
+    {
+      "eng": "hold",
+      "kor": "잡다",
+      "id": "cf74"
+    },
+    {
+      "eng": "hot",
+      "kor": "더운",
+      "id": "ec11"
+    },
+    {
+      "eng": "hurt",
+      "kor": "다치다",
+      "id": "a3ed"
+    },
+    {
+      "eng": "it",
+      "kor": "그것",
+      "id": "b3c4"
+    },
+    {
+      "eng": "jet",
+      "kor": "제트기",
+      "id": "b3c4"
+    },
+    {
+      "eng": "keep",
+      "kor": "지키다",
+      "id": "20c3"
+    },
+    {
+      "eng": "kind",
+      "kor": "친절한",
+      "id": "b2b6"
+    },
+    {
+      "eng": "kit",
+      "kor": "세트",
+      "id": "b3c4"
+    },
+    {
+      "eng": "know",
+      "kor": "알다",
+      "id": "4b92"
+    },
+    {
+      "eng": "last",
+      "kor": "마지막",
+      "id": "34d6"
+    },
+    {
+      "eng": "laugh",
+      "kor": "웃다",
+      "id": "84f5"
+    },
+    {
+      "eng": "learn",
+      "kor": "배우다",
+      "id": "7945"
+    },
+    {
+      "eng": "leave",
+      "kor": "떠나다",
+      "id": "1e16"
+    },
+    {
+      "eng": "let",
+      "kor": "허락하다",
+      "id": "b3c4"
+    },
+    {
+      "eng": "let",
+      "kor": "허락하다",
+      "id": "d2a7"
+    },
+    {
+      "eng": "like",
+      "kor": "좋아하다",
+      "id": "ad64"
+    },
+    {
+      "eng": "live",
+      "kor": "살다",
+      "id": "c1cd"
+    },
+    {
+      "eng": "long",
+      "kor": "긴",
+      "id": "2ee0"
+    },
+    {
+      "eng": "look",
+      "kor": "보다",
+      "id": "5042"
+    },
+    {
+      "eng": "lose",
+      "kor": "잃다",
+      "id": "1364"
+    },
+    {
+      "eng": "love",
+      "kor": "사랑하다",
+      "id": "9528"
+    },
+    {
+      "eng": "make",
+      "kor": "만들다",
+      "id": "4153"
+    },
+    {
+      "eng": "many",
+      "kor": "많은",
+      "id": "a48e"
+    },
+    {
+      "eng": "met",
+      "kor": "만나다",
+      "id": "b3c4"
+    },
+    {
+      "eng": "more",
+      "kor": "더 많은",
+      "id": "1441"
+    },
+    {
+      "eng": "move",
+      "kor": "움직이다",
+      "id": "2379"
+    },
+    {
+      "eng": "need",
+      "kor": "필요하다",
+      "id": "d390"
+    },
+    {
+      "eng": "net",
+      "kor": "그물",
+      "id": "b3c4"
+    },
+    {
+      "eng": "new",
+      "kor": "새로운",
+      "id": "b6f3"
+    },
+    {
+      "eng": "next",
+      "kor": "다음",
+      "id": "5fd2"
+    },
+    {
+      "eng": "not",
+      "kor": "아니다",
+      "id": "90ba"
+    },
+    {
+      "eng": "off",
+      "kor": "끄다",
+      "id": "a300"
+    },
+    {
+      "eng": "old",
+      "kor": "늙은",
+      "id": "8ff3"
+    },
+    {
       "eng": "one",
       "kor": "1",
       "id": "d153"
+    },
+    {
+      "eng": "open",
+      "kor": "열다",
+      "id": "f060"
+    },
+    {
+      "eng": "out",
+      "kor": "밖으로",
+      "id": "b3c4"
+    },
+    {
+      "eng": "own",
+      "kor": "자신의",
+      "id": "9fb0"
+    },
+    {
+      "eng": "pat",
+      "kor": "가볍게 치다",
+      "id": "b3c4"
+    },
+    {
+      "eng": "pick",
+      "kor": "고르다",
+      "id": "b130"
+    },
+    {
+      "eng": "play",
+      "kor": "놀다",
+      "id": "7d19"
+    },
+    {
+      "eng": "pull",
+      "kor": "당기다",
+      "id": "74bd"
+    },
+    {
+      "eng": "push",
+      "kor": "밀다",
+      "id": "1751"
+    },
+    {
+      "eng": "put",
+      "kor": "놓다",
+      "id": "a53c"
+    },
+    {
+      "eng": "quit",
+      "kor": "그만두다",
+      "id": "b3c4"
+    },
+    {
+      "eng": "rat",
+      "kor": "쥐",
+      "id": "b3c4"
+    },
+    {
+      "eng": "read",
+      "kor": "읽다",
+      "id": "489f"
+    },
+    {
+      "eng": "red",
+      "kor": "빨간",
+      "id": "f790"
+    },
+    {
+      "eng": "right",
+      "kor": "오른쪽",
+      "id": "de97"
+    },
+    {
+      "eng": "run",
+      "kor": "달리다",
+      "id": "9378"
+    },
+    {
+      "eng": "sat",
+      "kor": "앉다",
+      "id": "b3c4"
+    },
+    {
+      "eng": "say",
+      "kor": "말하다",
+      "id": "14bb"
+    },
+    {
+      "eng": "see",
+      "kor": "보다",
+      "id": "d714"
+    },
+    {
+      "eng": "sell",
+      "kor": "팔다",
+      "id": "c7b3"
+    },
+    {
+      "eng": "send",
+      "kor": "보내다",
+      "id": "5d68"
+    },
+    {
+      "eng": "set",
+      "kor": "놓다",
+      "id": "1be2"
+    },
+    {
+      "eng": "show",
+      "kor": "보여주다",
+      "id": "734f"
+    },
+    {
+      "eng": "sing",
+      "kor": "노래하다",
+      "id": "9596"
+    },
+    {
+      "eng": "sit",
+      "kor": "앉다",
+      "id": "4430"
+    },
+    {
+      "eng": "sleep",
+      "kor": "자다",
+      "id": "f4bb"
+    },
+    {
+      "eng": "small",
+      "kor": "작은",
+      "id": "1c09"
+    },
+    {
+      "eng": "smile",
+      "kor": "미소짓다",
+      "id": "ffd0"
+    },
+    {
+      "eng": "so",
+      "kor": "그래서",
+      "id": "2286"
+    },
+    {
+      "eng": "some",
+      "kor": "일부",
+      "id": "ae5a"
+    },
+    {
+      "eng": "soon",
+      "kor": "곧",
+      "id": "5327"
+    },
+    {
+      "eng": "stop",
+      "kor": "멈추다",
+      "id": "7ab9"
+    },
+    {
+      "eng": "take",
+      "kor": "가지다",
+      "id": "b8d4"
+    },
+    {
+      "eng": "talk",
+      "kor": "말하다",
+      "id": "8c72"
+    },
+    {
+      "eng": "tap",
+      "kor": "두드리다",
+      "id": "b3c4"
+    },
+    {
+      "eng": "tell",
+      "kor": "말하다",
+      "id": "d338"
+    },
+    {
+      "eng": "thank",
+      "kor": "감사하다",
+      "id": "7efd"
+    },
+    {
+      "eng": "think",
+      "kor": "생각하다",
+      "id": "5577"
+    },
+    {
+      "eng": "throw",
+      "kor": "던지다",
+      "id": "0c01"
+    },
+    {
+      "eng": "try",
+      "kor": "시도하다",
+      "id": "2917"
+    },
+    {
+      "eng": "turn",
+      "kor": "돌다",
+      "id": "f1e9"
+    },
+    {
+      "eng": "up",
+      "kor": "위로",
+      "id": "b3c4"
+    },
+    {
+      "eng": "use",
+      "kor": "사용하다",
+      "id": "584d"
+    },
+    {
+      "eng": "vet",
+      "kor": "수의사",
+      "id": "b3c4"
+    },
+    {
+      "eng": "wait",
+      "kor": "기다리다",
+      "id": "e788"
+    },
+    {
+      "eng": "walk",
+      "kor": "걷다",
+      "id": "4311"
+    },
+    {
+      "eng": "want",
+      "kor": "원하다",
+      "id": "4710"
+    },
+    {
+      "eng": "watch",
+      "kor": "보다",
+      "id": "2345"
+    },
+    {
+      "eng": "well",
+      "kor": "잘",
+      "id": "238f"
+    },
+    {
+      "eng": "wet",
+      "kor": "젖은",
+      "id": "b3c4"
+    },
+    {
+      "eng": "white",
+      "kor": "하얀",
+      "id": "75c3"
+    },
+    {
+      "eng": "work",
+      "kor": "일하다",
+      "id": "41c8"
+    },
+    {
+      "eng": "write",
+      "kor": "쓰다",
+      "id": "0901"
+    },
+    {
+      "eng": "yellow",
+      "kor": "노란",
+      "id": "7e4b"
+    },
+    {
+      "eng": "yet",
+      "kor": "아직",
+      "id": "b3c4"
+    },
+    {
+      "eng": "you",
+      "kor": "너",
+      "id": "611c"
+    },
+    {
+      "eng": "young",
+      "kor": "젊은",
+      "id": "dec5"
+    },
+    {
+      "eng": "zero",
+      "kor": "영",
+      "id": "19e1"
+    },
+    {
+      "eng": "zit",
+      "kor": "여드름",
+      "id": "b3c4"
+    },
+    {
+      "eng": "zoo",
+      "kor": "동물원",
+      "id": "6de9"
     }
   ]
 }

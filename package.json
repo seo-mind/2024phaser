@@ -15,11 +15,13 @@
     "phaser": "^3.80.1",
     "phaser3-rex-plugins": "^1.80.4",
     "pinia": "^2.1.7",
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.3"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
     "eslint": "^9.4.0",
+    "sass": "^1.77.6",
     "vite": "^5.2.0"
   }
 }

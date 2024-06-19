@@ -23,13 +23,13 @@ import { useGameStore } from '@/stores/GameStore'
 const gameContainer = ref(null);
 const showWordLayer = ref(false);
 const gameStore = useGameStore();
-//let words = ref(null); // 선택할 단어들
-const { words } = storeToRefs(gameStore)
-console.log(words)
+// gameStore 에서 gaeDataList 를 가져옵니다
+const { gameDataList} = storeToRefs(gameStore)
+
 
 let randomKeys =[];
-let randomKey = 0;
 const list_count = 4;
+let randomKey = 0;
 
 onMounted(async () => {
   // await useGameStore.getWords();
@@ -49,7 +49,7 @@ onBeforeUnmount(() => {
 })
 
 function showWord(){
-  randomKeys = getRandomElements(words, list_count)
+  randomKeys = getRandomElements(gameDataList.value, list_count)
   randomKey = Math.floor(Math.random() * ( list_count ));
   showWordLayer.value = true; 
   // Layer 가 true 이면 뒤에 배경 가리기
@@ -74,6 +74,7 @@ function selectWord(word) {
 
 function getRandomElements(arr, count) {
   const shuffled = arr.slice(); // 원본 배열을 복사
+  console.log(shuffled );
   for (let i = shuffled.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     

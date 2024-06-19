@@ -7,16 +7,17 @@ class IntroScene extends Phaser.Scene {
 
   preload() {
     // 인트로 화면에 필요한 리소스를 로드합니다.
-    this.load.image('introBackground', '/assets/introBackground.png');
-    this.load.image('startButton', '/assets/startButton.png');
+    this.load.image('introBackground', '/assets/title.png');
+    this.load.image('startButton', '/assets/enter.png');
     
 
   }
 
   create() {
     // 인트로 화면 설정
-    this.add.image(400, 300, 'introBackground');
+    this.add.image(400, 300, 'introBackground').setScale(0.5);
     const startButton = this.add.image(400, 500, 'startButton').setInteractive();
+    startButton.setScale(0.5);
   
     startButton.on('pointerdown', () => {
       this.scene.start('MainScene');

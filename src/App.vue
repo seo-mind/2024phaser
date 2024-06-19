@@ -1,8 +1,7 @@
 <template>
-    <GameComponent />
-  
+    <routerView />
 </template>
 
 <script setup>
-import GameComponent from './components/GameComponents.vue';
+
 </script>
