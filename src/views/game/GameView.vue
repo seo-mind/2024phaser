@@ -16,7 +16,9 @@
   </div>
   <div v-if="endGame" class="end-layer">
     <div class="content">
-      <span class="title">게임 종료</span>
+      <span class="title">게임 종료
+        <br />틀린 단어는 '{{ randomKeys[randomKey].eng }}'<br />
+        뜻은 '{{ randomKeys[randomKey].kor }}' 입니다</span>
       <div class="word-options">
         <input type="text" v-model="gameData.player" placeholder="이름을 입력하세요">
         <button @click="insBoard(gameData)">랭킹 등록</button>
