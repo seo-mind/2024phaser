@@ -716,121 +716,106 @@
       "id": "df1b",
       "player": "bbb",
       "score": 12,
+      "type": "game1",
       "rankDate": "2024-06-19T04:34:20.735Z"
-    },
-    {
-      "id": "b351",
-      "player": "bbb",
-      "score": 12,
-      "rankDate": "2024-06-19T04:35:08.828Z"
-    },
-    {
-      "id": "af01",
-      "player": "AAA",
-      "score": 0,
-      "rankDate": "2024-06-19T05:57:51.800Z"
-    },
-    {
-      "id": "7b19",
-      "player": "Sb",
-      "score": 3,
-      "rankDate": "2024-06-19T05:59:25.820Z"
     },
     {
       "id": "e157",
       "player": "한글",
       "score": 4,
+      "type": "game1",
       "rankDate": "2024-06-19T06:06:07.572Z"
     },
     {
       "id": "cd63",
       "player": "TT",
       "score": 14,
+      "type": "game1",
       "rankDate": "2024-06-19T06:48:41.833Z"
     },
     {
       "id": "a864",
       "player": "TTT",
       "score": 19,
+      "type": "game1",
       "rankDate": "2024-06-19T06:55:31.433Z"
-    },
-    {
-      "id": "d5f6",
-      "player": "AAA",
-      "score": 2,
-      "rankDate": "2024-06-19T06:56:22.324Z"
-    },
-    {
-      "id": "e8d3",
-      "player": "AAA",
-      "score": 3,
-      "rankDate": "2024-06-19T06:57:08.677Z"
-    },
-    {
-      "id": "69ca",
-      "player": "AAA",
-      "score": 1,
-      "rankDate": "2024-06-19T06:57:53.725Z"
-    },
-    {
-      "id": "33e0",
-      "player": "AAA",
-      "score": 3,
-      "rankDate": "2024-06-19T07:02:05.016Z"
-    },
-    {
-      "id": "74bb",
-      "player": "AAA",
-      "score": 2,
-      "rankDate": "2024-06-19T07:03:41.449Z"
     },
     {
       "id": "9656",
       "player": "AAA",
       "score": 4,
+      "type": "game1",
       "rankDate": "2024-06-19T07:29:48.841Z"
     },
     {
       "id": "db8d",
       "player": "11",
       "score": 21,
+      "type": "game1",
       "rankDate": "2024-06-19T07:30:52.787Z"
-    },
-    {
-      "id": "3149",
-      "player": "하이",
-      "score": 2,
-      "rankDate": "2024-06-19T07:30:41.860Z"
     },
     {
       "id": "5982",
       "player": "te",
       "score": 5,
+      "type": "game1",
       "rankDate": "2024-06-19T07:31:20.921Z"
     },
     {
       "id": "757e",
       "player": "AAA",
       "score": 15,
+      "type": "game1",
       "rankDate": "2024-06-19T07:31:24.048Z"
-    },
-    {
-      "id": "9a2d",
-      "player": "AAA",
-      "score": 4,
-      "rankDate": "2024-06-19T07:32:43.828Z"
     },
     {
       "id": "3ceb",
       "player": "AAA",
       "score": 50,
+      "type": "game1",
       "rankDate": "2024-06-19T07:33:48.507Z"
     },
     {
-      "id": "1cfd",
+      "id": "c956",
+      "player": "AAA",
+      "score": 71,
+      "type": "game1",
+      "rankDate": "2024-06-19T08:39:50.418Z"
+    },
+    {
+      "id": "f4ea",
+      "player": "QWQQ",
+      "score": 19,
+      "type": "game1",
+      "rankDate": "2024-06-20T01:38:30.677Z"
+    },
+    {
+      "id": "2f97",
+      "player": "ㄴㄸㄸ",
+      "score": 2,
+      "type": "game1",
+      "rankDate": "2024-06-21T04:41:38.986Z"
+    },
+    {
+      "id": "a664",
+      "player": "ㅇ",
+      "score": 4,
+      "type": "game1",
+      "rankDate": "2024-06-21T04:46:07.805Z"
+    },
+    {
+      "id": "12f5",
       "player": "AAA",
       "score": 2,
-      "rankDate": "2024-06-19T07:49:45.851Z"
+      "type": "game1",
+      "rankDate": "2024-06-21T05:11:29.893Z"
+    },
+    {
+      "id": "3495",
+      "player": "ㅠㅠ",
+      "score": 10,
+      "type": "game1",
+      "rankDate": "2024-06-21T05:12:00.398Z"
     }
   ]
 }

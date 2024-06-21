@@ -81,11 +81,19 @@
   --color2: var(--pika2);
   --front: var(--pikafront);
 }
+// .card.mewtwo {
+//   --color1: var(--mewtwo1);
+//   --color2: var(--mewtwo2);
+//   --front: var(--mewtwofront);
+// }
 .card.mewtwo {
-  --color1: var(--mewtwo1);
-  --color2: var(--mewtwo2);
-  --front: var(--mewtwofront);
-}
+  --color1: #efb2fb;
+  --color2: #9c247c;
+  --color3: #efd9f0;
+  --color4: #8ec5d6;
+  --color5: #f8f3fa;
+    --front: var(--mewtwofront);
+  }
 .card.eevee {
   --color1: #ec9bb6;
   --color2: #ccac6f;

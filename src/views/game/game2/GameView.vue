@@ -30,9 +30,10 @@
 
 <script setup>
 import { ref, onMounted , onBeforeUnmount } from 'vue';
-import game, { gameEvents } from '@/Game.js';
+import game, { gameEvents } from '@/views/game/game2/Game.js';
 import { storeToRefs } from 'pinia'
-import { useGameStore } from '@/stores/GameStore'
+import { useGameStore } from '@/stores/game/game2/GameStore'
+import { useCommonGameStore } from '@/stores/game/CommonGameStore'
 import { useRouter } from 'vue-router'
 
 const gameContainer = ref(null);
@@ -40,6 +41,7 @@ const showWordLayer = ref(false);
 const endGame = ref(false);
 const blockLayer = ref(false);
 const gameStore = useGameStore();
+const commonGameStore = useCommonGameStore();
 const router = useRouter()
 // gameStore 에서 gameData, gaeDataList 를 가져옵니다
 const { gameData,gameDataList} = storeToRefs(gameStore)
@@ -58,6 +60,7 @@ onMounted(async () => {
   // 플레이어 기본 데이터 
   gameData.value.player = "AAA";
   gameData.value.score = 0;
+  gameData.value.type = "game1"
   gameData.value.rankDate = new Date()
 
   
@@ -129,7 +132,7 @@ function getRandomElements(arr, count) {
 
 const insBoard = async (gameData) => {
   gameData.rankDate = new Date()
-  const response = await gameStore.insGameRank(gameData)
+  const response = await commonGameStore.insGameRank(gameData)
   if (response.status === 201) {
     //gameStore.initPostSearchParam()
     // router.push({

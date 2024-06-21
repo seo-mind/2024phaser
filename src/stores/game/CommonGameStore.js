@@ -2,7 +2,7 @@ import { instance } from '@/common/AxiosConfig'
 import { defineStore } from 'pinia'
 import { computed, ref } from 'vue'
 
-export const useGameStore = defineStore('useGameStore', () => {
+export const useCommonGameStore = defineStore('useCommonGameStore', () => {
   const game = ref({
     data: {},
     dataList: [],
@@ -58,18 +58,6 @@ export const useGameStore = defineStore('useGameStore', () => {
     }
   }
 
-
-
-
-  const getWordsList = async () => {
-    const response = await instance.get('/words')
-    if (response.data) {
-      game.value.dataList = response.data
-    }
-    return response
-  }
-
-  
   const getRankList = async () => {
     const response = await instance.get('/ranks?_sort=-score&_limit=10')
     if (response.data) {
@@ -78,10 +66,6 @@ export const useGameStore = defineStore('useGameStore', () => {
     return response
   }
 
-  // const setBoard = async () => {
-  //   const response = await axios.post('/board', this.board.data)
-  //   board.value.result = response.data
-  // }
 
   const insGameRank = async (insRankData, headerOptions) => {
     const response = await instance.post(`/ranks`, insRankData, headerOptions)
@@ -92,7 +76,6 @@ export const useGameStore = defineStore('useGameStore', () => {
     game,
     gameData,
     gameDataList,
-    getWordsList,
     insGameRank,
     getRankList
   }

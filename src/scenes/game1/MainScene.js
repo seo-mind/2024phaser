@@ -1,5 +1,5 @@
+import { gameEvents } from '@/views/game/game1/Game.js'; // 수정된 부분
 import Phaser from 'phaser';
-import { gameEvents } from '../Game.js'; // 수정된 부분
 
 class MainScene extends Phaser.Scene {
   constructor() {
@@ -86,6 +86,7 @@ class MainScene extends Phaser.Scene {
   }
 
   onEvent(){
+    this.fireBullet();
     this.fireBullet();
     this.updateTime();
     this.fireBullet2();

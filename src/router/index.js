@@ -15,13 +15,19 @@ const routes = [
   {
     path: '/game1',
     name: 'game1',
-    component: () => import('@/views/game/GameView.vue'),
+    component: () => import('@/views/game/game1/GameView.vue'),
     beforeEnter: routeGuardForLogging
   },
   {
     path: '/rank1',
     name: 'rank1',
     component: () => import('@/views/game/RankView.vue'),
+    beforeEnter: routeGuardForLogging
+  },
+  {
+    path: '/game2',
+    name: 'game2',
+    component: () => import('@/views/game/game2/GameView.vue'),
     beforeEnter: routeGuardForLogging
   }
 ]

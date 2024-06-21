@@ -7,6 +7,7 @@
       </div> -->
       <router-link class="nav-link" to="/game1"><div class="card pika animated"><span>총알 피하기<br />&lt;영어 단어&gt;</span> </div>
       </router-link>
+      <div class="card mewtwo animated"><span>소나기<br/><작업중></span></div>
       <div class="card eevee animated"><span>Comming soon</span></div>
       <!-- <div class="card mewtwo animated"></div> -->
     </section>

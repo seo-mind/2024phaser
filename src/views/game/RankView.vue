@@ -40,19 +40,19 @@
 <script setup>
 import { ref, onMounted , onBeforeUnmount } from 'vue';
 import { storeToRefs } from 'pinia'
-import { useGameStore } from '@/stores/GameStore'
+import { useCommonGameStore } from '@/stores/game/CommonGameStore'
 
 //rank  가져오기
-const gameStore = useGameStore();
-const { gameDataList } = storeToRefs(gameStore)
+const commonGameStore = useCommonGameStore();
+const { gameDataList } = storeToRefs(commonGameStore)
 
 onMounted(async () => {
-  await gameStore.getRankList();
+  await commonGameStore.getRankList();
 });
 
 
 onBeforeUnmount(() => {
-  gameStore.$reset()
+  commonGameStore.$reset()
 })
 
 </script>
