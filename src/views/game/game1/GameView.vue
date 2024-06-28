@@ -29,13 +29,13 @@
 </template>
 
 <script setup>
-import { ref, onMounted , onBeforeUnmount } from 'vue';
+import { getRandomElements } from '@/common/game/GameUtils';
+import { useCommonGameStore } from '@/stores/game/CommonGameStore';
+import { useGameStore } from '@/stores/game/game1/GameStore';
 import game, { gameEvents } from '@/views/game/game1/Game.js';
-import { storeToRefs } from 'pinia'
-import { useGameStore } from '@/stores/game/game1/GameStore'
-import { useCommonGameStore } from '@/stores/game/CommonGameStore'
-import { useRouter } from 'vue-router'
-import { getRandomElements } from '@/common/game/GameUtils'
+import { storeToRefs } from 'pinia';
+import { onBeforeUnmount, onMounted, ref } from 'vue';
+import { useRouter } from 'vue-router';
 
 const gameContainer = ref(null);
 const showWordLayer = ref(false);
@@ -130,7 +130,7 @@ const insBoard = async (gameData) => {
     //   name: 'rank1',
     //   params: { }
     // })
-    location.href = "/rank1"
+    location.href = "/ranks/game1"
   }
 }
 

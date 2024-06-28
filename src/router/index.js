@@ -19,8 +19,8 @@ const routes = [
     beforeEnter: routeGuardForLogging
   },
   {
-    path: '/rank1',
-    name: 'rank1',
+    path: '/ranks/:id',
+    name: 'ranks',
     component: () => import('@/views/game/RankView.vue'),
     beforeEnter: routeGuardForLogging
   },

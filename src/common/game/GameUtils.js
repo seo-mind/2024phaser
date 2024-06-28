@@ -7,6 +7,8 @@ const getRandomElements = (arr, count) =>{
     
     [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]; // 요소를 섞음
   }
+  if (count == null)
+    return shuffled; // count가 주어지지 않으면 전체 배열을 반환
   return shuffled.slice(0, count); // 섞인 배열에서 처음 count개의 요소를 반환
 }
 

@@ -2,6 +2,7 @@ import { instance } from '@/common/AxiosConfig'
 import { defineStore } from 'pinia'
 import { computed, ref } from 'vue'
 
+
 export const useCommonGameStore = defineStore('useCommonGameStore', () => {
   const game = ref({
     data: {},
@@ -58,8 +59,8 @@ export const useCommonGameStore = defineStore('useCommonGameStore', () => {
     }
   }
 
-  const getRankList = async () => {
-    const response = await instance.get('/ranks?_sort=-score&_limit=10')
+  const getRankList = async (param) => {
+    const response = await instance.get('/ranks?_sort=-score&_limit=10'+ param)
     if (response.data) {
       game.value.dataList = response.data
     }

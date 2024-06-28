@@ -7,7 +7,7 @@ class IntroScene extends Phaser.Scene {
 
   preload() {
     // 인트로 화면에 필요한 리소스를 로드합니다.
-    this.load.image('introBackground', '/assets/title.png');
+    this.load.image('introBackground', '/assets/game2-title.png');
     this.load.image('startButton', '/assets/enter.png');
     
 

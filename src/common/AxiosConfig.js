@@ -1,4 +1,6 @@
-import axios from 'axios'
+import axios from 'axios';
+
+
 
 const instance = axios.create({
   baseURL: 'http://192.168.6.71:3001',
@@ -24,5 +26,5 @@ instance.interceptors.response.use(
   }
 )
 
-export { instance }
+export { instance };
 

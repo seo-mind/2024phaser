@@ -102,7 +102,6 @@ class MainScene extends Phaser.Scene {
     // 화면을 벗어난 총알 제거
     this.bullets.children.each(function(bullet) {
       if (bullet.active && (bullet.x < 0 || bullet.x > this.sys.game.config.width || bullet.y < 0 || bullet.y > this.sys.game.config.height)) {
-        console.log(';;;');
         bullet.destroy();
       }
     }, this);
@@ -206,7 +205,6 @@ class MainScene extends Phaser.Scene {
 
   
   handleDataReceived(data) {
-    
     // Vue.js에서 받은 데이터를 Phaser에서 처리하는 로직
     this.sceneResume();
     //this.add.text(200, 200, `Received: ${data}`, { fontSize: '24px', fill: '#FF5733' }).setOrigin(0.5);

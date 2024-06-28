@@ -38,20 +38,24 @@
 </template>
 
 <script setup>
-import { ref, onMounted , onBeforeUnmount } from 'vue';
-import { storeToRefs } from 'pinia'
-import { useCommonGameStore } from '@/stores/game/CommonGameStore'
+import { useCommonGameStore } from '@/stores/game/CommonGameStore';
+import { storeToRefs } from 'pinia';
+import { onBeforeUnmount, onMounted } from 'vue';
+import { useRoute } from 'vue-router';
 
 //rank  가져오기
 const commonGameStore = useCommonGameStore();
 const { gameDataList } = storeToRefs(commonGameStore)
+const route = useRoute()
 
 onMounted(async () => {
-  await commonGameStore.getRankList();
+  console.log(route.params.id)
+  await commonGameStore.getRankList('&type='+route.params.id);
 });
 
 
 onBeforeUnmount(() => {
+ 
   commonGameStore.$reset()
 })
 
